@@ -5,10 +5,6 @@ class ModuleSelectionScreen extends StatelessWidget {
   const ModuleSelectionScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    if(globals.searchText.isNotEmpty) {
-      globals.searchText = "";
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Seleccionar Modulo'),
