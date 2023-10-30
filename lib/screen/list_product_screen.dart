@@ -27,7 +27,8 @@ class ListProductScreen extends State<ListProductState> {
         children: [
           Padding(
             padding: EdgeInsets.all(15),
-            child: TextField(
+            child: TextFormField(
+              initialValue: globals.searchText,
               onChanged: (text) {
                 setState(() {
                    globals.searchText = text;

@@ -29,7 +29,8 @@ class ListProveedorScreen extends State<ListProveedorState> {
         children: [
           Padding(
             padding: EdgeInsets.all(15),
-            child: TextField(
+            child: TextFormField(
+              initialValue: globals.searchText,
               onChanged: (text) {
                 setState(() {
                    globals.searchText = text;
